@@ -1,0 +1,30 @@
+{
+  "name": "Glam-0-drama",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Gewoon weer lekker reaguren",
+  "homepage_url": "http://google.nl",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "http://www.dumpert.nl/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.dumpert.nl/*"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js",
+        "src/inject/inject.js"
+      ],
+      "css": [
+        "css/style.css"
+      ]
+    }
+  ]
+}
